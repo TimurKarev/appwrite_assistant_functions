@@ -5,15 +5,15 @@ import os
 # This is your Appwrite function
 # It's executed each time we get a request
 def main(context):
-    TIM_TWITTER_API_KEY = context.res.send(os.environ('TIM_TWITTER_API_KEY'))
-    TIM_TWITTER_API_SECRET = context.res.send(os.environ('TIM_TWITTER_API_SECRET'))
-    TIM_TWITTER_ACCESS_TOKEN = context.res.send(os.environ('TIM_TWITTER_ACCESS_TOKEN'))
-    TIM_TWITTER_ACCESS_TOKEN_SECRET = context.res.send(os.environ('TIM_TWITTER_ACCESS_TOKEN_SECRET'))
-    TIM_BEARER_TOKEN = context.res.send(os.environ('TIM_BEARER_TOKEN'))
+    TIM_TWITTER_API_KEY = context.res.send(os.environ['TIM_TWITTER_API_KEY'])
+    TIM_TWITTER_API_SECRET = context.res.send(os.environ['TIM_TWITTER_API_SECRET'])
+    TIM_TWITTER_ACCESS_TOKEN = context.res.send(os.environ['TIM_TWITTER_ACCESS_TOKEN'])
+    TIM_TWITTER_ACCESS_TOKEN_SECRET = context.res.send(os.environ['TIM_TWITTER_ACCESS_TOKEN_SECRET'])
+    TIM_BEARER_TOKEN = context.res.send(os.environ['TIM_BEARER_TOKEN'])
 
 
     # You can log messages to the console
-    context.log(TIM_TWITTER_API_KEY)
+    context.log('TIM_TWITTER_API_KEY')
 
     # If something goes wrong, log an error
     context.error("Hello, Errors!")

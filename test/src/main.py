@@ -5,17 +5,15 @@ import os
 # This is your Appwrite function
 # It's executed each time we get a request
 def main(context):
-    # Why not try the Appwrite SDK?
-    #
-    # client = (
-    #     Client()
-    #     .set_endpoint("https://cloud.appwrite.io/v1")
-    #     .set_project(os.environ["APPWRITE_FUNCTION_PROJECT_ID"])
-    #     .set_key(os.environ["APPWRITE_API_KEY"])
-    # )
+    TIM_TWITTER_API_KEY = context.res.send(os.environ('TIM_TWITTER_API_KEY'))
+    TIM_TWITTER_API_SECRET = context.res.send(os.environ('TIM_TWITTER_API_SECRET'))
+    TIM_TWITTER_ACCESS_TOKEN = context.res.send(os.environ('TIM_TWITTER_ACCESS_TOKEN'))
+    TIM_TWITTER_ACCESS_TOKEN_SECRET = context.res.send(os.environ('TIM_TWITTER_ACCESS_TOKEN_SECRET'))
+    TIM_BEARER_TOKEN = context.res.send(os.environ('TIM_BEARER_TOKEN'))
+
 
     # You can log messages to the console
-    context.log("Hello, Logs!")
+    context.log(TIM_TWITTER_API_KEY)
 
     # If something goes wrong, log an error
     context.error("Hello, Errors!")

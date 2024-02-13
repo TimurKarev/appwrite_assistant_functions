@@ -1,6 +1,6 @@
 from appwrite.client import Client
 import os
-from ...lib.shared import print_error
+from test.shared import print_error
 
 
 # This is your Appwrite function

@@ -1,5 +1,6 @@
 from appwrite.client import Client
 import os
+from ...lib.shared import print_error
 
 
 # This is your Appwrite function
@@ -17,6 +18,7 @@ def main(context):
 
     # If something goes wrong, log an error
     context.error("Hello, Errors!")
+    print_error(context)
 
     # The `ctx.req` object contains the request data
     if context.req.method == "GET":

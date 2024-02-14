@@ -1,1 +1,7 @@
-appwrite
+ai_assistant @ git+https://github.com/TimurKarev/ai_assistant_pack.git@e13b1b3190973100b4db6305829d20cc4dae4682
+appwrite==4.1.0
+certifi==2024.2.2
+charset-normalizer==3.3.2
+idna==3.6
+requests==2.31.0
+urllib3==2.2.0

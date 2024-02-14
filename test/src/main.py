@@ -1,6 +1,7 @@
 import os
-from   .common.shared import print_error
+from .some import print_some
 
 def main(context):
     context.error("Main ")
-    print_error(context)
+    print_some(context)
+    # print_error(context)
